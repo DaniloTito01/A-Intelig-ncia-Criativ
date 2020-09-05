@@ -3,7 +3,7 @@ var express = require('express')
 const app = express();
 const cors = require('cors')
 
-//require('dotenv/config');
+require('dotenv/config');
 
 app.use(cors())
 
@@ -34,12 +34,7 @@ var dadoss =
 
 const  nome= ''
        
-        // email: '',
-        // telefone: '',
-        // estado: '',
-        // cidade: '',
-        // whatsapp: '',
-        // emailbox: ''
+       
 
 
 
@@ -48,13 +43,13 @@ app.use(express.json());
 
 
 
-app.get("/tes", (req, res) =>{
+app.get("/", (req, res) =>{
     res.send("Alo  Mundo!! ");
 
    
 });
 
-app.post("/ps", (req, res ) =>{
+app.post("/", (req, res ) =>{
    
   
  res.send("OK");
@@ -100,7 +95,7 @@ app.post("/ps", (req, res ) =>{
 
 
 
-app.listen((process.env.PORT || 5000), function(){
+app.listen((process.env.PORT || 3000), function(){
     console.log('listening on *:5000');
     console.log("API Start");
   });

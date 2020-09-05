@@ -48,13 +48,13 @@ app.use(express.json());
 
 
 
-app.get("/", (req, res) =>{
+app.get("/tes", (req, res) =>{
     res.send("Alo  Mundo!! ");
 
    
 });
 
-app.post("/", (req, res ) =>{
+app.post("/ps", (req, res ) =>{
    
   
  res.send("OK");
@@ -90,7 +90,7 @@ app.post("/", (req, res ) =>{
     // banco.gravarBanco(dadoss.dados.nome,dadoss.dados.email,dadoss.dados.telefone,dadoss.dados.estado,dadoss.dados.cidade,dadoss.dados.whatsappBox,dadoss.dados.emailbox);
 
  
-    email(dadoss.dados.nome,dadoss.dados.email,dadoss.dados.telefone,dadoss.dados.estado,dadoss.dados.cidade,dadoss.dados.whatsappBox,dadoss.dados.emailbox);
+   // email(dadoss.dados.nome,dadoss.dados.email,dadoss.dados.telefone,dadoss.dados.estado,dadoss.dados.cidade,dadoss.dados.whatsappBox,dadoss.dados.emailbox);
 
  }
  console.log(dadoss + "DATA" + dia + "/0" + mes +"/" + ano4  +"Horas" + hora +":" + min);

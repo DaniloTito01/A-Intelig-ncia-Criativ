@@ -7,7 +7,7 @@ require('dotenv/config');
 
 app.use(cors())
 
-
+const PORT = process.env.PORT || 3000;
 //  const banco =  require('./db');
 //  const Cliente = require('./db');
 
@@ -95,10 +95,9 @@ app.post("/", (req, res ) =>{
 
 
 
-app.listen((process.env.PORT || 3000), function(){
-    console.log('listening on *:5000');
-    console.log("API Start");
-  });
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
     
 
 

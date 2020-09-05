@@ -1,8 +1,0 @@
-NODE_USER=atendimento@ainteligenciacriativa.com.br
-NODE_PASS=V123asd456@
-
-
-# Banco de dados
-DB_NAME=rocketseat
-DB_PASS=
-DB_HOST=localhost
